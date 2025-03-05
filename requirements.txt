@@ -1,0 +1,18 @@
+transformers>=4.30.0
+torch
+sentence-transformers
+tqdm
+datasets
+numpy
+tqdm
+datasets
+gradio>=3.50.0
+accelerate
+bitsandbytes
+matplotlib
+seaborn
+tensorboard
+faiss-cpu>=1.7.4  # or faiss-gpu if GPU support is available
+scikit-learn
+pandas
+toml

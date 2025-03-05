@@ -1,0 +1,19 @@
+[paths]
+corpus_path = "./data/arxiv_corpus"
+pickle_path = "./data/corpus.pkl"
+embeddings_dir = "./data/embeddings" 
+feedback_file = "./data/user_feedback.txt"
+
+[retriever]
+model_name = "intfloat/multilingual-e5-large-instruct"
+batch_size = 32
+use_faiss = true
+
+[rag]
+model_name = "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+max_new_tokens = 200
+top_k = 5
+
+[app]
+title = "Academic RAG Dialogue System"
+theme = "Soft"

@@ -20,6 +20,7 @@ Create the Env
 ```python
 conda create -n LitChatbot python==3.10
 pip install -r requirements.txt
+conda activate LitChatbot
 ```
 
 Run the Gradio Interface

@@ -5,6 +5,7 @@ This project implements a Retrieval-Augmented Generation (RAG) system for academ
 ## Project Structure
 
 - **data/**: Data handling utilities
+  - ```unzip data.zip``` to extract the data
 - **embeddings/**: Storage for pre-computed embeddings
 - **models/**: Model implementations
 - **retrievers/**: Retrieval components (dense retrievers, FAISS retrievers)

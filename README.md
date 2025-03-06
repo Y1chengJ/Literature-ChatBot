@@ -10,7 +10,7 @@ This project implements a Retrieval-Augmented Generation (RAG) system for academ
 - **models/**: Model implementations
 - **retrievers/**: Retrieval components (dense retrievers, FAISS retrievers)
 - **utils/**: Utility functions
-- **app.py**: Web application using Gradio
+- **src/app.py**: Web application using Gradio
 - **config.toml**: configs that can be changed based on preference
 
 ## Setup and Installation

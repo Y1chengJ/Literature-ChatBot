@@ -11,7 +11,7 @@ def build_corpus(csv_file='data/merged_arxiv_papers.csv'):
         # Drop duplicates
         print("Generating numeric IDs...")
         num_rows = len(df)
-        ids = [str(i).zfill(6) for i in range(num_rows)]  # 生成格式如 "000001" 的ID
+        ids = [str(i).zfill(6) for i in range(num_rows)] 
         
         # Convert to Dataset format
         print("Converting to Dataset format...")

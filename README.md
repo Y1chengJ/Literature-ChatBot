@@ -86,3 +86,9 @@ python rag_eval/rag_evaluation.py
 Feel free to change the LLM model and the embedding model based in your needs.
 
 In default, the used embedding is encoded by `intfloat/multilingual-e5-large-instruct`, but I also provide another embedding created by ` BAAI/bge-m3`. 
+
+| Model Name                              | Dimension | Sequence Length |
+| --------------------------------------- | --------- | --------------- |
+| BAAI/bge-m3                             | 1024      | 8192            |
+| intfloat/multilingual-e5-large-instruct | 1024      | 514             |
+

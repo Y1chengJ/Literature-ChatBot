@@ -36,16 +36,14 @@ class DenseRetriever:
         self.faiss_index = None
         
         # If corpus is provided, automatically process embeddings
-        self.embedding_save_dir = embeddings_dir 
+        self.embedding_save_dir = embeddings_dir
         if corpus is not None:
             self.initialize_embeddings()
     
     def initialize_embeddings(self):
         """Initialize embeddings: load if exists, otherwise encode and save"""
         logger.info(f"Try to load embeddings from {os.path.abspath(self.embedding_save_dir)}")
-        # print absolute path
-        print(os.path.abspath(self.embedding_save_dir))
-        # import pdb; pdb.set_trace()
+
         if self.load_vectors(self.embedding_save_dir):
             logger.info("Embeddings loaded successfully.")
             # If using FAISS, initialize the index

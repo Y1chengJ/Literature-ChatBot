@@ -15,7 +15,7 @@ config = load_from_config()
 
 # Load paths config
 paths_config = config['paths']
-corpus_path = paths_config['corpus_path']
+corpus_path = paths_config['corpus_path'] if os.path.exists(paths_config['corpus_path']) else None
 pickle_path = paths_config['pickle_path']
 embeddings_dir = paths_config['embeddings_dir']
 
